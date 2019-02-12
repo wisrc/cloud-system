@@ -18,6 +18,9 @@ spring:
   ### 调用追踪配置
   zipkin:
     base-url: http://localhost:9410
+  sleuth:
+    sampler:
+      percentage: 1.0
 
 cassandra:
   host: 118.31.46.174
