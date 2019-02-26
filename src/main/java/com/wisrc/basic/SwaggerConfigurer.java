@@ -27,7 +27,7 @@ public class SwaggerConfigurer {
                 .enable(enable)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.wisrc.microservice.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.wisrc"))
                 .paths(PathSelectors.any())
                 .build();
     }
