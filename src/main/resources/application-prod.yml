@@ -16,6 +16,12 @@ spring:
       discovery:
         health-check-path: /actuator/health
         prefer-ip-address: true
+  ### 调用追踪配置
+  zipkin:
+    base-url: http://121.42.143.130:9410
+  sleuth:
+    sampler:
+      percentage: 1.0
 
 cassandra:
   host: 118.31.46.174

@@ -5,4 +5,4 @@ spring:
 
 server:
   servlet:
-    context-path: /batch/schedule
+    context-path: /basedemo
