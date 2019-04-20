@@ -1,4 +1,4 @@
-package com.wisrc.basic;
+package com.wisrc.microservice.configurer;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
