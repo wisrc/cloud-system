@@ -1,23 +1,27 @@
 package com.wisrc.microservice.util;
 
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import org.springframework.data.domain.Page;
 
 @Data
 public class PageData {
 
+    @ApiModelProperty(position = 0)
     private long total;
 
+    @ApiModelProperty(position = 1)
     private Integer pageNumber;
 
+    @ApiModelProperty(position = 2)
     private Integer pageSize;
 
-    private Object rows;
-
+    @ApiModelProperty(position = 3)
     private boolean pageable;
 
-
+    @ApiModelProperty(position = 4)
+    private Object rows;
 
     public PageData(Object data, Page page) {
         if (page == null) {

@@ -1,18 +1,16 @@
 package com.wisrc.microservice.util;
 
 
+import lombok.extern.slf4j.Slf4j;
 import org.joda.time.DateTime;
 
 import java.sql.Timestamp;
 
+@Slf4j
 public class DateTimeUtil {
 
-
-    public static String currentTime(){
-        return DateTime.now().toString("yyyy-MM-dd HH:mm:ss");
-    }
-
     public static Timestamp currentTimestamp(){
-        return new Timestamp(System.currentTimeMillis());
+        String currentTime = DateTime.now().toString("yyyy-MM-dd HH:mm:ss");
+        return Timestamp.valueOf(currentTime);
     }
 }

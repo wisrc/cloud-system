@@ -15,12 +15,11 @@ public interface SysUserService {
     /**
      * 用户注册
      * 用户通过手机号注册
-     * @param email 邮箱
-     * @param password 密码
+     * @param username 邮箱
      * @param phone 手机号
      * @param code 验证码
      * */
-    ResultBody register(String email, String password, String phone, int code);
+    ResultBody register(String username, String phone, Integer code);
 
 
 
@@ -41,9 +40,10 @@ public interface SysUserService {
     /**
      * 禁止用户登陆
      * @param userId 被禁止的用户唯一ID
+     * @param remark 备注信息
      * @param operator 操作人唯一ID
      * */
-    ResultBody forbidUser(Integer userId, String operator);
+    ResultBody updateStatus(Integer userId, String remark, String operator, int status);
 
 
     /**
@@ -51,4 +51,12 @@ public interface SysUserService {
      * @param paramVo
      * */
     ResultBody saveOrUpdate(SysUserUpdateParamVo paramVo, String operator);
+
+
+    /**
+     * 删除用户
+     * @param userId 需要删除的用户唯一ID
+     * @param operator 操作人唯一ID
+     * */
+    ResultBody delete(Integer userId, String operator);
 }
