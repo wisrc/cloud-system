@@ -8,7 +8,7 @@ import java.sql.Timestamp;
 
 @Data
 @ApiModel
-public class SysUserProfileVo {
+public class SysUserVo {
     private int id;
     private String avatar;
     private Integer userId;
@@ -17,7 +17,6 @@ public class SysUserProfileVo {
     private String email;
     private String liveCity;
     private String enrollmentYear;
-    private Integer deleteFlag;
     private Timestamp createTime;
     private String createBy;
     private Timestamp modifyTime;
@@ -25,4 +24,7 @@ public class SysUserProfileVo {
     private String realname;
     private String nickname;
     private String remark;
+    private String username;
+    private String mobilePhone;
+    private Integer status;
 }

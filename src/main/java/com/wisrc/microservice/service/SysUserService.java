@@ -23,27 +23,12 @@ public interface SysUserService {
     ResultBody register(String email, String password, String phone, int code);
 
 
-    /**
-     * 用户通过手机号登陆
-     * @param phone 手机号
-     * @param code 验证码
-     * */
-    ResultBody loginByPhone(String phone, int code);
-
-
-    /**
-     * 用户通过账号密码登陆
-     * @param username  账号
-     * @param password 密码
-     * */
-    ResultBody loginByUsername(String username, String password);
-
 
     /**
      * 获取用户个人信息
      * @param userId 用户对应的唯一ID
      * */
-    ResultBody getProfiles(String userId);
+    ResultBody getProfiles(int userId);
 
 
     /**
@@ -58,7 +43,7 @@ public interface SysUserService {
      * @param userId 被禁止的用户唯一ID
      * @param operator 操作人唯一ID
      * */
-    ResultBody forbidUser(Integer userId, Integer operator);
+    ResultBody forbidUser(Integer userId, String operator);
 
 
     /**

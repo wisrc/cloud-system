@@ -1,9 +1,12 @@
 package com.wisrc.microservice.entity;
 
+import org.hibernate.annotations.Where;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "sys_user_base", schema = "iot_system", catalog = "")
+@Where(clause = "delete_flag = 0")
 public class SysUserBaseEntity {
     private int id;
     private String username;

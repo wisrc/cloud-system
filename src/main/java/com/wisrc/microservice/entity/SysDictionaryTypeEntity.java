@@ -1,10 +1,13 @@
 package com.wisrc.microservice.entity;
 
+import org.hibernate.annotations.Where;
+
 import javax.persistence.*;
 import java.sql.Timestamp;
 
 @Entity
 @Table(name = "sys_dictionary_type", schema = "iot_system", catalog = "")
+@Where(clause = "delete_flag = 0")
 public class SysDictionaryTypeEntity {
     private int id;
     private String code;

@@ -12,7 +12,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
         basePackages = {"com.wisrc.microservice.dao"}
 )
 @EnableFeignClients(
-        basePackages = {"com.wisrc.microservice.feign"}
+        basePackages = {"com.wisrc.microservice.service.feign"}
 )
 public class MicroserviceApplication {
 
