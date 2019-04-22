@@ -87,6 +87,7 @@ public class SysUserController {
     public ResultBody register(@RequestParam(value = "username") String username,
                                @RequestParam(value = "mobilePhone") String mobilePhone,
                                @RequestParam(value = "code") Integer code){
+        log.info("用户注册，账号：{}, 手机号：{}, 验证码：{}", username, mobilePhone, code);
         return sysUserService.register(username,mobilePhone,code);
     }
 
