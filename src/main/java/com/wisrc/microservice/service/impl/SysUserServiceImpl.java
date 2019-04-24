@@ -40,13 +40,7 @@ public class SysUserServiceImpl implements SysUserService {
 
 
     @Override
-    public ResultBody register(String username, String phone, Integer code) {
-
-        // TODO 短信验证码校验， 暂时不支持
-        if (code == null) {
-            return ResultBody.success(100001,"验证码不能为空", username);
-        }
-
+    public ResultBody register(String username, String phone) {
         SysUserBaseEntity baseEntity = new SysUserBaseEntity();
         baseEntity.setMobilePhone(phone);
         baseEntity.setDeleteFlag(0);

@@ -17,9 +17,8 @@ public interface SysUserService {
      * 用户通过手机号注册
      * @param username 邮箱
      * @param phone 手机号
-     * @param code 验证码
      * */
-    ResultBody register(String username, String phone, Integer code);
+    ResultBody register(String username, String phone);
 
 
 
