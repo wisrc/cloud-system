@@ -1,4 +1,4 @@
-FROM ccr.ccs.tencentyun.com/tsf_309810957/jdk-1.8
+FROM ccr.ccs.tencentyun.com/tsf_309810957/jdk-1.8:1.8
 
 MAINTAINER zhanwei_huang hzwy23@163.com
 
