@@ -1,4 +1,4 @@
-FROM java:1.8
+FROM primetoninc/jdk:1.8
 
 MAINTAINER zhanwei_huang hzwy23@163.com
 
