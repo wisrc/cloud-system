@@ -10,7 +10,7 @@ spring:
     password: zhanwei
   cloud:
     consul:
-      host: gateway.iwiya.com
+      host: qcloud.consul.iwiya.com
       port: 32530
       enabled: true
       discovery:
