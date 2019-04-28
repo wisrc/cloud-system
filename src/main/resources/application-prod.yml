@@ -10,11 +10,11 @@ spring:
     password: zhanwei
   cloud:
     consul:
-      host: 121.42.143.130
-      port: 8500
+      host: gateway.iwiya.com
+      port: 32530
       enabled: true
       discovery:
-        health-check-path: /actuator/health
+        health-check-path: /system/actuator/health
         prefer-ip-address: true
   ### 调用追踪配置
   zipkin:
