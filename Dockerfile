@@ -14,4 +14,4 @@ EXPOSE 8080
 
 ENV TZ Asia/Shanghai
 
-CMD java -jar target/microservice-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod
+CMD java -jar target/microservice.jar --spring.profiles.active=prod
