@@ -4,14 +4,12 @@ MAINTAINER zhanwei_huang hzwy23@163.com
 
 WORKDIR /opt
 
-ADD . ./basic
+ADD ./target/ ./basic
 
 WORKDIR basic
-
-RUN mvn clean package -DskipTests=true
 
 EXPOSE 8080
 
 ENV TZ Asia/Shanghai
 
-CMD java -jar target/microservice.jar --spring.profiles.active=prod
+CMD java -jar microservice.jar --spring.profiles.active=prod
