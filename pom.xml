@@ -144,5 +144,8 @@
             <url>https://repo.spring.io/milestone</url>
         </repository>
     </repositories>
+    <build>
+        <finalName>microservice</finalName>
+    </build>
 
 </project>
