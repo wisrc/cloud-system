@@ -16,6 +16,7 @@ spring:
       discovery:
         health-check-path: /system/actuator/health
         prefer-ip-address: true
+        ip-address: 129.204.236.64
 
   ### 调用追踪配置
   zipkin:
