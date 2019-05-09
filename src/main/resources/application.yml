@@ -9,4 +9,3 @@ spring:
 server:
   servlet:
     context-path: /system
-  port: 8081
