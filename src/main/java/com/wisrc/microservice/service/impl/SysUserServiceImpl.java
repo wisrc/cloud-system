@@ -46,8 +46,8 @@ public class SysUserServiceImpl implements SysUserService {
         baseEntity.setDeleteFlag(0);
         baseEntity.setStatus(0);
         baseEntity.setUsername(username);
-        sysUserBaseDao.save(baseEntity);
-        return ResultBody.success("Bingo");
+        baseEntity = sysUserBaseDao.save(baseEntity);
+        return ResultBody.success(baseEntity);
     }
 
 

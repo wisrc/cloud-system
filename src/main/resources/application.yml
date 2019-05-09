@@ -5,6 +5,8 @@ spring:
   jackson:
     time-zone: GMT+8
 
+
 server:
   servlet:
     context-path: /system
+  port: 8081
