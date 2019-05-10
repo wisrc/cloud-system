@@ -54,6 +54,8 @@ public class SysUserServiceImpl implements SysUserService {
     @Override
     public ResultBody getProfiles(int userId) {
 
+        log.info("user id is: {}", userId);
+
         SysUserVo element = new SysUserVo();
 
         SysUserProfileEntity item = sysUserProfileDao.findByUserId(userId);
